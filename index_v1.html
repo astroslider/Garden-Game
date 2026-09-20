@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css" />
+        <script src="script.js" defer></script>
+        <title>Garden Game</title>
+    </head>
+
+    <body>
+        <header>
+            <h1>🌿 Bewegungsgarten</h1>
+            <p>Jede Minute Bewegung lässt etwas wachsen.</p>
+        </header>
+
+        <main>
+        <div id="statistics-row">
+            <div class="statistics" id="plants-statistic">
+                🌱<br> 
+                <span class="line" id="stat-plants">0</span><br> 
+                Pflanzen
+            </div>
+            <div class="statistics" id="minutes-statistic">
+                ⏱️<br>
+                <span class="line" id="stat-minutes">0</span><br> 
+                Minuten
+            </div>
+            <div class="statistics" id="units-statistics">
+                🏃<br> 
+                <span class="line" id="stat-trainings">0</span><br> 
+                Einheiten
+            </div>
+        </div>
+            <div id="garden-viewport">
+                <div id="garden"></div>
+            </div>
+
+             <section class="time-tracker">
+            <form class="time-tracker-form">
+                    <label id="time-tracker-text" for="time">Bewegungsminuten eintragen</label>
+                <div class="time-entry-row">
+                    <input type="number" name="time" id="time" required min="1" max="999" step="1" placeholder="min" />              
+                    <button type="submit" class="btn-style" id="get-time-btn">Eintragen</button>
+                </div>
+            </form> <!-- use preventDefault() in JS to avoid page reload -->
+            <div>
+                <button type="reset" class="btn-style-reset" id="reset-btn">Garten zurücksetzen</button>
+            </div>
+            <div hidden id="hidden-message-box">
+                <p id="hidden-message">Zeit erfasst, dein Garten wächst!</p>
+            </div>
+            </section>
+
+        </main>
+    </body>
+
+
+
+
+</html>

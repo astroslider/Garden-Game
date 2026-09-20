@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: rgb(1, 43, 1);
+    width: 100%;
+    max-width: 800px;
+    color: white;
+    padding: 1em;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.statistics {
+    background-color: whitesmoke;
+    padding: 1em 0.5em;
+    border-radius: 10px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.time-entry-row {
+    display: flex;
+    gap: 12px;
+}
+
+#statistics-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#garden {
+    background-color: #78a864;
+    border-radius: 16px;
+    width: 800px;
+    height: 400px;
+    position: relative;
+    transform-origin: top left;
+}
+
+#garden-viewport {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+}
+
+main {
+    max-width: 800px;
+    width: 100%;
+    margin: auto;
+}
+
+.time-tracker {
+    background-color: beige;
+    margin: 20px 0px 10px 0px;
+    border-radius: 10px;
+    padding: 1em;
+}
+
+.line {
+    font-weight: bold;
+}
+
+#time-tracker-text {
+    border-color: rgb(1, 43, 1);
+    font-weight: bold;
+    display: inline-block;
+    margin: 10px;
+}
+
+#time {
+    border-radius: 10px;
+    border: 1px solid #c5cec0;
+    padding: 8px 16px;
+}
+
+.btn-style {
+    background-color: rgb(1, 43, 1);
+    color: white;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 10px;
+    border: 1px solid rgb(1, 43, 1);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn-style-reset {
+    background-color: rgb(243, 245, 243);
+    color: rgb(248, 88, 88);
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 10px;
+    border: 1px solid #c5cec0;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+}
+
+.plant {
+    display: inline-block;
+    margin: 0.5em;
+    position: absolute; 
+    top: 10px;
+    left: 10px;
+}
+
+.meadow-flowers {
+    width: 40px;
+    height: 40px;
+}
+
+.spring-flowers {
+    width: 40px;
+    height: 40px;
+}
+
+.wildflowers {
+    width: 45px;
+    height: 45px;
+}
+
+.garden-perennials {
+    width: 50px;
+    height: 50px;
+}
+
+.shrubs {
+    width: 60px;
+    height: 60px;
+}
+
+.magnificent-perennials {
+    width: 60px;
+    height: 60px;
+}
+
+.young-trees {
+    width: 100px;
+    height: 100px;
+}
+
+.magnificent-trees {
+    width: 120px;
+    height: 120px;
+}
